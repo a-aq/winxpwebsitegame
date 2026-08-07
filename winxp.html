@@ -830,13 +830,13 @@
   <div id="login-overlay">
     <div class="xp-window" style="width: 410px; position: relative;">
       <div class="xp-titlebar">
-        <div class="xp-title-text"><span>👤</span> Windows XP Log On</div>
+        <div class="xp-title-text"><span></span> Windows XP Log On</div>
       </div>
       <div class="xp-body">
         <div style="text-align: center; margin-bottom: 10px;">
-          <div style="font-size: 28px;">🖥️</div>
+          <div style="font-size: 28px;"></div>
           <div style="font-size: 13px; font-weight: bold; color: #003c74;">Touhou Chaos Arena Account</div>
-          <div style="font-size: 10px; color: #555;">Protected Login with Secret Recovery Code</div>
+          <div style="font-size: 10px; color: #555;">Protected ur shit Login with Secret recovery Code</div>
         </div>
         
         <div id="view-login">
@@ -858,7 +858,7 @@
 
         <div id="view-register" style="display: none;">
           <div style="font-size: 10px; color: #1e3a8a; background: #eff6ff; border: 1px solid #93c5fd; padding: 6px; margin-bottom: 8px; border-radius: 4px; line-height: 1.4; text-align: left; direction: ltr;">
-            🔑 <b>Secret Recovery Code:</b> Save your recovery code carefully! It is the only way to reset your password if forgotten.
+             <b>Secret Recovery Code:</b> Save your recovery code carefully! It is the only way to reset your password if forgotten 
           </div>
 
           <div style="margin-bottom: 4px;">
@@ -874,12 +874,12 @@
             <input type="password" id="reg-confirm" class="xp-input" placeholder="Repeat password...">
           </div>
           <div style="margin-bottom: 8px;">
-            <label style="font-size: 10px; font-weight: bold; color: #b91c1c;">Secret Recovery Code / PIN (Save this):</label>
+            <label style="font-size: 10px; font-weight: bold; color: #b91c1c;">Secret Recovery Code / PIN (save it carefully):</label>
             <input type="text" id="reg-code" class="xp-input" placeholder="e.g. 1234 or SecretKey">
           </div>
           <div id="reg-err" style="font-size: 10px; color: red; margin-bottom: 8px; display: none;"></div>
           <div style="display: flex; justify-content: space-between;">
-            <button class="xp-btn" onclick="handleRegister()" onmouseenter="playSound('hover')">Submit Registration</button>
+            <button class="xp-btn" onclick="handleRegister()" onmouseenter="playSound('hover')">i finished sign up sir!!</button>
             <button class="xp-btn" onclick="switchTab('login')" onmouseenter="playSound('hover')">Back to Login</button>
           </div>
         </div>
@@ -1044,7 +1044,7 @@
     <p>Technical information:</p>
     <p>*** STOP: 0x0000000D (0x00000009, 0x00000002, 0x00000000, 0x00000000)</p>
     <br>
-    <p>Rebooting in 2 seconds...</p>
+    <p>Rebooting in 67676767676767676767 seconds...</p>
   </div>
 
   <div class="xp-window" id="minigame-modal">
@@ -1100,7 +1100,7 @@
       return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
     }
 
-    // Cryptographic State Signing & Integrity Verification (HMAC-like signature)
+    
     async function signAccountData(accountObj) {
       const payload = `${accountObj.displayName}:${accountObj.passwordHash}:${accountObj.recoveryHash}:${accountObj.score}:${accountObj.banned}:${APP_SECRET_SALT}`;
       const msgUint8 = new TextEncoder().encode(payload);
